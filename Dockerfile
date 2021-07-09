@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim@sha256:0ed82c5d1414eacc0e97fda5656ed03cc06ab91c26cdeb54388403e440599a60
+FROM debian:bullseye-slim@sha256:94133c8fb81e4a310610bc83be987bda4028f93ebdbbca56f25e9d649f5d9b83
 
 # github metadata
 LABEL org.opencontainers.image.source=https://github.com/uwcip/infrastructure-squid
