@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# initialize squid
+/usr/sbin/squid --foreground -z
+
+# start in the foreground and send logs to the console
+exec /usr/sbin/squid -NYCd 1
