@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.source=https://github.com/uwcip/infrastructure-sq
 
 ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get -q update && apt-get -y upgrade && \
-    apt-get install -y --no-install-recommends squid squidclient && \
+    apt-get install -y --no-install-recommends squid squidclient prometheus-squid-exporter && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 COPY entrypoint /entrypoint
 RUN chmod +x /entrypoint
